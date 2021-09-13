@@ -1,0 +1,78 @@
+param($Step="A")
+# -------------------------------------
+# Imports
+# -------------------------------------
+$script = $myInvocation.MyCommand.Definition
+$scriptPath = Split-Path -parent $script
+. (Join-Path $scriptpath functions.ps1)
+
+
+Clear-Any-Restart
+
+if (Should-Run-Step "A") 
+{
+    Write-Host "Installing Containers and rebooting..."
+
+    Install-WindowsFeature -Name Containers
+	
+	Write-Host "----------"	
+	Write-Host "Updating Path to include C:\Program Files\Docker  ..."
+	$old = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name path).path
+	$new = "$old;C:\Program Files\Docker"
+	Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name path -Value $new
+	Write-Host "----------"	
+	Write-Host "This Docker-on-NimbusClient installation script will continue after a reboot."
+    read-host "Press ENTER to reboot " 
+    Restart-And-Resume $script "B"
+}
+
+if (Should-Run-Step "B") 
+{
+	Write-Host "----------"
+	Write-Host "Installing Docker Repository ..."
+
+    Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+	
+	Write-Host "----------"
+	Write-Host "Installing Docker - this can take a few minutes ..."
+    Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 20.10.6
+    Start-Service Docker
+	
+	Write-Host "----------"
+	Write-Host "Installing docker-compose and docker-app ..."
+	cd C:\
+    curl.exe -L https://github.com/docker/compose/releases/download/1.29.1/docker-compose-Windows-x86_64.exe -o "C:\Program Files\Docker\docker-compose.exe"
+    curl.exe -L https://github.com/docker/app/releases/download/v0.6.0/docker-app-windows.tar.gz -o docker-app-windows.tar.gz
+    tar xvzf .\docker-app-windows.tar.gz
+    Move-Item -Path ".\docker-app-windows.exe" -Destination "C:\Program Files\Docker\docker-app.exe"
+    del .\docker-app-windows.tar.gz
+	
+	Write-Host "----------"	
+	Write-Host "Installing nimbusapp ..."
+    curl.exe -L https://raw.githubusercontent.com/msteffensen19/nimbusapp-w/main/nimbusapp.pl > ".\nimbusapp.pl"
+    Get-Content .\nimbusapp.pl | Set-Content "C:\Program Files\Docker\nimbusapp.pl"
+    curl.exe -L https://raw.githubusercontent.com/msteffensen19/nimbusapp-w/main/nimbusapp.bat > ".\nimbusapp.bat"
+    Get-Content .\nimbusapp.bat | Set-Content "C:\Program Files\Docker\nimbusapp.bat"
+    del .\nimbusapp.*
+	
+	Write-Host "----------"	
+	Write-Host "Installing AliasesEverywhere ..."
+    git clone https://github.com/msteffensen19/InstallNimbusAliasesEverywhere.git
+    cd C:\InstallNimbusAliasesEverywhere\Windows
+    .\InstallNimbusAliases.bat 
+}
+Write-Host "----------"
+Write-Output "Showing results of 'nimbusapp --version'"
+nimbusapp --version
+Write-Host "----------"
+
+Write-Host   "==========================================================================================="
+Write-Output "| Now edit the browser links for LRE Load Test and LRE Admin to use NimbusClient instead. |"
+Write-Output "|                                                                                         |"
+Write-Output "| To run LoadRunner Enterprise as a container, open an Admin Powershell and type:         |"
+Write-Output "| nimbusapp lre:2021.1 up                                                                 |"
+Write-Host   "==========================================================================================="
+Write-Host ""
+Write-Host "This Docker-on-NimbusClient installation script is Complete."
+Write-Host ""
+read-host "Press ENTER to exit the script "
