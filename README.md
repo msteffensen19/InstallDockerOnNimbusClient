@@ -2,7 +2,8 @@
 Install Docker on NimbusClient machines.
 
 This PowerShell script will install Docker on a NimbusClient VM.
-This is done to allow running LoadRunner Enterprise as a container.
+This is done to allow running LoadRunner Enterprise as a container
+on NimbusClient machines instead of on NimbusWindows VMs.
 
 Ton install this, just clone this repo into any folder and then 
 select the InstallDockerOnNimbusClient.ps1 file and right click
