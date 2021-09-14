@@ -11,8 +11,7 @@ Clear-Any-Restart
 
 if (Should-Run-Step "A") 
 {
-    Write-Host "Installing Containers and rebooting..."
-
+    Write-Host "Installing Windows Containers feature ..."
     Install-WindowsFeature -Name Containers
 	
 	Write-Host "----------"	
@@ -21,7 +20,8 @@ if (Should-Run-Step "A")
 	$new = "$old;C:\Program Files\Docker"
 	Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name path -Value $new
 	Write-Host "----------"	
-	Write-Host "This Docker-on-NimbusClient installation script will continue after a reboot."
+	Write-Host "The installation script will continue after a reboot."
+	Write-Host ""
     read-host "Press ENTER to reboot " 
     Restart-And-Resume $script "B"
 }
@@ -34,7 +34,7 @@ if (Should-Run-Step "B")
     Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
 	
 	Write-Host "----------"
-	Write-Host "Installing Docker - this can take a few minutes ..."
+	Write-Host "Installing Docker - this can take a couple of minutes ..."
     Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 20.10.6
     Start-Service Docker
 	
@@ -82,5 +82,6 @@ Write-Output "| nimbusapp lre:2021.1 up                                         
 Write-Host   "==========================================================================================="
 Write-Host   ""
 Write-Host   "This Docker-on-NimbusClient installation script is Complete."
+Write-Host   ""
 Write-Host   ""
 read-host    "Press ENTER to exit the script "
