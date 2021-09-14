@@ -12,7 +12,7 @@ will run the h"nimbusapp --version" command to verify that docker
 and nimbusapp are working properly.
 
 After the installation you should update your browser shortcuts for
-LRE LoadTest and LRE Admin to replace NimbusServer.aos.com with
+LRE LoadTest and LRE Admin to replace NimbusWindows.aos.com with
 NimbusClient.aos.com.
 
 Other utilities installed include:
