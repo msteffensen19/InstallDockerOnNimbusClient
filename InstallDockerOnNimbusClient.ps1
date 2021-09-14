@@ -56,10 +56,18 @@ if (Should-Run-Step "B")
     del .\nimbusapp.*
 	
 	Write-Host "----------"	
-	Write-Host "Installing AliasesEverywhere ..."
+	Write-Host "Installing NimbusAliasesEverywhere ..."
     git clone https://github.com/msteffensen19/InstallNimbusAliasesEverywhere.git
     cd C:\InstallNimbusAliasesEverywhere\Windows
     .\InstallNimbusAliases.bat 
+    
+	Write-Host "----------"	
+	Write-Host "Installing Admin PowerShell shortcut on Desktop ..."
+    copy-item "$Home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk" "C:\users\demo\Desktop"
+    Rename-Item -Path "$Home\Desktop\Windows PowerShell.lnk" -NewName "$Home\Desktop\Admin PowerShell.lnk"
+    $bytes = [System.IO.File]::ReadAllBytes("$Home\Desktop\Admin PowerShell.lnk")
+    $bytes[0x15] = $bytes[0x15] -bor 0x20 #set byte 21 (0x15) bit 6 (0x20) ON
+    [System.IO.File]::WriteAllBytes("$Home\Desktop\Admin PowerShell.lnk", $bytes)
 }
 Write-Host "----------"
 Write-Output "Showing results of 'nimbusapp --version'"
@@ -72,7 +80,7 @@ Write-Output "|                                                                 
 Write-Output "| To run LoadRunner Enterprise as a container, open an Admin Powershell and type:         |"
 Write-Output "| nimbusapp lre:2021.1 up                                                                 |"
 Write-Host   "==========================================================================================="
-Write-Host ""
-Write-Host "This Docker-on-NimbusClient installation script is Complete."
-Write-Host ""
-read-host "Press ENTER to exit the script "
+Write-Host   ""
+Write-Host   "This Docker-on-NimbusClient installation script is Complete."
+Write-Host   ""
+read-host    "Press ENTER to exit the script "
