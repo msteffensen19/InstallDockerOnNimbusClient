@@ -1,20 +1,22 @@
 # InstallDockerOnNimbusClient
 Install Docker on NimbusClient machines.
 
-This Powershell script will install Docker on a NimbusClient VM.
+This PowerShell script will install Docker on a NimbusClient VM.
 This is done to allow running LoadRunner Enterprise as a container.
-Just clone this repo into any folder and then double-click the
-InstallDockerOnNimbusClient.ps1 file. This will start a Powershell
+
+Ton install this, just clone this repo into any folder and then 
+select the InstallDockerOnNimbusClient.ps1 file and right click
+the file and select Run with PowerShell. This will start a PowerShell
 command window which will first install a Docker repository and then
-install Docker on Windows. It will then reboot the machine and
+install Docker on Windows. It will then ask to reboot the machine and
 continue installing other utilities. After everything installs, it
 will run the "nimbusapp --version" command to verify that docker
-and nimbusapp are working properly.
+and nimbusapp are installed and working properly.
 
 As part of the installation, a modified version of nimbusapp is
-installed which kills LR Agent (magentproc.exe) when a "nimbusapp 
+installed which kills the LR Agent (magentproc.exe) when a "nimbusapp 
 lre start" command is run (since the agent conflicts with an LRE process)
-and it also starts the LRE agent when a "nimbusapp lre stop" command is run.
+and it also starts the LRE Agent when a "nimbusapp lre stop" command is run.
 
 After the installation you should update your browser shortcuts for
 LRE LoadTest and LRE Admin to replace NimbusWindows.aos.com with
