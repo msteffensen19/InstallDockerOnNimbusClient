@@ -22,7 +22,7 @@ NimbusClient.aos.com.
 
 Other utilities installed include:
 * docker-compose and docker-app
-* nimbusapp 1.5.0 (modified for Windows and LRE)
+* nimbusapp 1.5.0-nc (modified for Windows and LRE)
 * InstallNimbusAliasesEverywhere - this installs common Nimbus aliases
 * Updates the Path env variable to include C:\Program Files\Docker
 
