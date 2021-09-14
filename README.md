@@ -1,5 +1,5 @@
 # InstallDockerOnNimbusClient
-Install Docker on NimbusClient machine.
+Install Docker on NimbusClient machines.
 
 This Powershell script will install Docker on a NimbusClient VM.
 This is done to allow running LoadRunner Enterprise as a container.
