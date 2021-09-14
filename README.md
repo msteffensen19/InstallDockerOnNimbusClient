@@ -23,8 +23,9 @@ LRE LoadTest and LRE Admin to replace NimbusWindows.aos.com with
 NimbusClient.aos.com.
 
 Other utilities installed include:
-* docker-compose and docker-app
-* nimbusapp 1.5.0-nc (modified for Windows and LRE)
-* InstallNimbusAliasesEverywhere - this installs common Nimbus aliases
+* Installs docker-compose and docker-app
+* Installs nimbusapp 1.5.0-nc (modified for Windows and LRE)
+* InstallNimbusAliasesEverywhere - this installs common Nimbus aliases (dps, dpsa, di, de)
 * Updates the Path env variable to include C:\Program Files\Docker
+* Installs Passwords.txt on the desktop for common container passwords
 
