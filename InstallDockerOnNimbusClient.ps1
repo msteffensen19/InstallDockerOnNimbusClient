@@ -40,8 +40,8 @@ if (Should-Run-Step "B")
     
         Write-Host "----------"
 	Write-Host "Updating LRE Chrome bookmarks ..."
-    xcopy .\Bookmarks "C:\Users\demo\AppData\Local\Google\Chrome\User Data\default\"
-    del   .\Bookmarks
+    xcopy C:\Users\demo\InstallDockerOnNimbusClient\Bookmarks "C:\Users\demo\AppData\Local\Google\Chrome\User Data\default\"
+    del   C:\Users\demo\InstallDockerOnNimbusClient\Bookmarks
 	
 	Write-Host "----------"
 	Write-Host "Installing docker-compose and docker-app ..."
