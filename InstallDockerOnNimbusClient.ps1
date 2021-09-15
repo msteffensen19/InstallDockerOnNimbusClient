@@ -37,6 +37,11 @@ if (Should-Run-Step "B")
 	Write-Host "Installing Docker - this can take a couple of minutes ..."
     Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 20.10.6
     Start-Service Docker
+    
+        Write-Host "----------"
+	Write-Host "Updating LRE Chrome bookmarks ..."
+    xcopy .\Bookmarks "C:\Users\demo\AppData\Local\Google\Chrome\User Data\default\"
+    del   .\Bookmarks
 	
 	Write-Host "----------"
 	Write-Host "Installing docker-compose and docker-app ..."
@@ -75,10 +80,10 @@ nimbusapp --version
 Write-Host "----------"
 
 Write-Host   "==========================================================================================="
-Write-Output "| Now edit the browser links for LRE Load Test and LRE Admin to use NimbusClient instead. |"
 Write-Output "|                                                                                         |"
 Write-Output "| To run LoadRunner Enterprise as a container, open an Admin Powershell and type:         |"
 Write-Output "| nimbusapp lre:2021.1 up                                                                 |"
+Write-Output "|                                                                                         |"
 Write-Host   "==========================================================================================="
 Write-Host   ""
 Write-Host   "This Docker-on-NimbusClient installation script is Complete."
