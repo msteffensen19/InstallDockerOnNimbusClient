@@ -1,5 +1,5 @@
 # InstallDockerOnNimbusClient
-Install Docker on NimbusClient machines.
+Install Docker on NimbusClient machines running Windows Server Standard 2019.
 
 This PowerShell script will install Docker on a NimbusClient VM.
 This is done to allow running LoadRunner Enterprise as a container
@@ -16,12 +16,8 @@ and nimbusapp are installed and working properly.
 
 As part of the installation, a modified version of nimbusapp is
 installed which kills the LR Agent (magentproc.exe) when a "nimbusapp 
-lre start" command is run (since the agent conflicts with an LRE process)
-and it also starts the LRE Agent when a "nimbusapp lre stop" command is run.
-
-After the installation you should update your browser shortcuts for
-LRE LoadTest and LRE Admin to replace NimbusWindows.aos.com with
-NimbusClient.aos.com.
+lre start" command is run (or up) since the agent conflicts with an LRE process,
+and it also starts the LRE Agent when a "nimbusapp lre stop" (or down) command is run.
 
 Other tasks include:
 * Installs docker-compose and docker-app
@@ -29,4 +25,5 @@ Other tasks include:
 * Installs InstallNimbusAliasesEverywhere - this installs common Nimbus aliases (dps, dpsa, di, de) on Windows CMD and PowerShell
 * Updates the Path env variable to include C:\Program Files\Docker
 * Installs Passwords.txt on the desktop for common container passwords
+* Installs an updated set of Chrome bookmarks for LRE to run on NimbusClient
 
