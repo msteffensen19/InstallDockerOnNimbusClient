@@ -1,477 +1,505 @@
 {
-   "checksum": "91a663c67c89b301e9c53c3a9b7e843d",
+   "checksum": "0b836547f0d60a662cbc3dc4c18a2fc8",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "date_added": "13195956303000000",
-            "guid": "cec97f80-face-46c8-b625-180dc3dc2138",
-            "id": "5",
+            "guid": "2720e4ed-42d9-4e76-bcc2-a458583a5cb2",
+            "id": "81",
             "name": "AOS",
             "type": "url",
             "url": "http://nimbusserver.aos.com:8000/"
          }, {
             "date_added": "13195956302000000",
-            "guid": "fb197e81-f1da-40f0-95f7-9394a71a7a54",
-            "id": "6",
+            "guid": "09211a30-7001-434c-96c8-277350e0659d",
+            "id": "82",
             "name": "Jenkins",
             "type": "url",
             "url": "http://nimbusserver.aos.com:8090/"
          }, {
             "date_added": "13195956302000000",
-            "guid": "68df6964-2af1-429a-a7a9-e5cf6ac75102",
-            "id": "7",
+            "guid": "0c8e956f-4fca-4bf6-a679-c65cdf8819d2",
+            "id": "83",
             "name": "ALM Octane",
             "type": "url",
             "url": "http://nimbusserver.aos.com:8085/"
          }, {
             "children": [ {
                "date_added": "13212088203000000",
-               "guid": "c92b36ff-3254-4799-bfee-eb3fa7f46850",
-               "id": "9",
+               "guid": "bc79304e-24cd-430c-bd2b-90a2beb96d7b",
+               "id": "85",
                "name": "Advantage Online Shopping (AOS)",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8000/#/"
             }, {
                "date_added": "13223422749000000",
-               "guid": "fe51d53a-4ef7-44f7-a1b5-b0c0a98dfdb6",
-               "id": "10",
+               "guid": "7fffb3e1-71ef-4485-ac3d-821ff48edf67",
+               "id": "86",
                "name": "Advantage Online Shopping - Management Console",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8000/admin/"
             }, {
                "date_added": "13222965988000000",
-               "guid": "e21ac7f5-1581-4cc6-acaa-d6ef4414a771",
-               "id": "11",
+               "guid": "d34ed9a3-dc49-43a3-94ea-6ff34f82e22d",
+               "id": "87",
                "name": "Advantage Online Shopping (Public)",
                "type": "url",
                "url": "http://advantageonlineshopping.com/#/"
             }, {
                "date_added": "13212088681000000",
-               "guid": "4aa1a439-089c-4d97-be0d-2ee36a4b6061",
-               "id": "12",
+               "guid": "de4892b4-fa4a-4609-b715-55a0d683c2ed",
+               "id": "88",
                "name": "ALM Octane",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8085/"
             }, {
                "date_added": "13195956302000000",
-               "guid": "bc274491-b439-408c-bfb6-75dd96cfcec7",
-               "id": "13",
+               "guid": "2c1aec03-2288-4b16-b657-6193b1c9ec10",
+               "id": "89",
                "name": "ALM Prisma",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8185/"
             }, {
                "date_added": "13195956303000000",
-               "guid": "5d758700-dca3-4484-a9a1-fdf0437b0a2d",
-               "id": "14",
+               "guid": "1377b2b9-65fd-49f0-a35c-9db93cfbe2df",
+               "id": "90",
                "name": "ALM/Quality Center",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8082/qcbin"
             }, {
                "date_added": "13212115273000000",
-               "guid": "85ddd31e-c14e-44e9-a6a5-3e1c88274079",
-               "id": "15",
+               "guid": "e589120d-8129-46e6-86b2-78271c8b058f",
+               "id": "91",
                "name": "ALM Web Runner",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8082/qcbin/webrunner/#!/login"
             }, {
                "children": [ {
                   "date_added": "13195956302000000",
-                  "guid": "ff5b6506-4ba5-4784-abb5-8d3a442fb8e4",
-                  "id": "17",
+                  "guid": "aa8822b6-dcdf-4d91-9689-de255b16c8ff",
+                  "id": "93",
                   "name": "ART Product Homepage",
                   "type": "url",
                   "url": "https://www.microfocus.com/software/art"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "d07d4886-2118-47af-9aa6-99ba14584f0e",
-                  "id": "18",
+                  "guid": "cee66176-c730-40e1-be14-7821582ceb62",
+                  "id": "94",
                   "name": "Education eBook",
                   "type": "url",
                   "url": "https://www.microfocus.com/media/ebook/micro-focus-education-ebook.pdf"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "30a06f65-6cba-4e49-9491-6537d148cb3c",
-                  "id": "19",
+                  "guid": "311a3655-87fa-4fd7-ad23-44c210489e0f",
+                  "id": "95",
                   "name": "Software Education Training and Exams",
                   "type": "url",
                   "url": "https://www.microfocus.com/training"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "06c56c98-0c66-4e0f-8937-fb2e6acfe271",
-                  "id": "20",
+                  "guid": "82f26397-9e6e-4065-8385-4ec32bea1ee5",
+                  "id": "96",
                   "name": "ADM Learning Paths",
                   "type": "url",
                   "url": "https://admin.viewcentral.com/events/uploads/microfocus/Application_Delivery_Managemen_Certification.pdf"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "fad0133b-c715-4a56-87fb-a29cc8f2be82",
-                  "id": "21",
+                  "guid": "9af6e9b8-6595-4312-b5e1-c2f9111b78e0",
+                  "id": "97",
                   "name": "ITOM Learning Paths",
                   "type": "url",
                   "url": "https://admin.viewcentral.com/events/uploads/microfocus/IT_Operations_Management_Certification.pdf"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "9c33b9bb-6610-4e14-90a1-cf5dcef7b748",
-                  "id": "22",
+                  "guid": "bc371568-5009-4c46-a4e9-752cfeea2d8c",
+                  "id": "98",
                   "name": "Security Learning Paths",
                   "type": "url",
                   "url": "https://admin.viewcentral.com/events/uploads/microfocus/Security_Risk_and_Governance.pdf"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "25f1eb92-d9c6-430c-bd74-6e2871ef9918",
-                  "id": "23",
+                  "guid": "4c6ba381-f9e1-4be2-ba23-b2fdf436987b",
+                  "id": "99",
                   "name": "Vertica Learning Paths",
                   "type": "url",
                   "url": "https://admin.viewcentral.com/events/uploads/microfocus/vertica.pdf"
                } ],
-               "date_added": "13276218888209570",
+               "date_added": "13278202462252128",
                "date_modified": "0",
-               "guid": "45e4fdd6-4114-4e7b-a987-01b37f80916c",
-               "id": "16",
+               "guid": "988002f3-4040-4e63-a231-4e699529d997",
+               "id": "92",
                "name": "ART",
                "type": "folder"
             }, {
                "date_added": "13195956303000000",
-               "guid": "e6b27b28-14f7-43e9-864d-c3e0b8295238",
-               "id": "24",
+               "guid": "82e4e0dc-7e0f-4a8c-af4b-d2a641cdc56e",
+               "id": "100",
                "name": "AutoPass License Server (APLS)",
                "type": "url",
                "url": "https://nimbusserver.aos.com:5814/autopass"
             }, {
                "date_added": "13195956302000000",
-               "guid": "fcd71470-062f-4386-bbff-9cfe93f99d06",
-               "id": "25",
+               "guid": "52883809-2e60-47e1-808c-d2f53b1bdf18",
+               "id": "101",
                "name": "Deployment Automation (DA)",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8089/da"
             }, {
                "children": [ {
                   "date_added": "13226023635000000",
-                  "guid": "c97e8db9-6d00-408b-9c23-b7fb544906df",
-                  "id": "27",
+                  "guid": "66320200-7bb7-4425-ba0d-5b9684418a87",
+                  "id": "103",
                   "name": "Dimensions CM Web Client",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8060/dimensions/?jsp=login"
                }, {
                   "date_added": "13235675044000000",
-                  "guid": "c0f2ef9a-9aa4-4df1-a6bd-6bb6636ed673",
-                  "id": "28",
+                  "guid": "ca772de2-6ca6-4214-845e-0015a00bacac",
+                  "id": "104",
                   "name": "Dimensions CM Pulse",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8060/pulse/"
                }, {
                   "date_added": "13226023629000000",
-                  "guid": "e09da8b6-01c0-4687-9555-5bfb4f5dfbf0",
-                  "id": "29",
+                  "guid": "7a0cbf18-6b48-4f2d-9a90-9a23423f1245",
+                  "id": "105",
                   "name": "Dimensions CM Administration Console",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8060/adminconsole/?jsp=login"
                } ],
-               "date_added": "13276218888209721",
+               "date_added": "13278202462252326",
                "date_modified": "0",
-               "guid": "ad847222-8a61-4574-95fd-7696e223ae48",
-               "id": "26",
+               "guid": "c9ccdf5e-994d-41fe-a317-1061c62a438f",
+               "id": "102",
                "name": "Dimensions CM",
                "type": "folder"
             }, {
                "date_added": "13224115611000000",
-               "guid": "b96d40a8-72bb-41b0-b55c-0e1d13855228",
-               "id": "30",
+               "guid": "ce2d12ca-1f8f-4a4c-9e76-23074f738f15",
+               "id": "106",
                "name": "Dimensions RM",
                "type": "url",
                "url": "http://nimbuswindows.aos.com:8080/rtmBrowser"
             }, {
                "date_added": "13195956302000000",
-               "guid": "31a4751a-c9a9-4d55-b62f-d9b94cc189b3",
-               "id": "31",
+               "guid": "c26c39a4-4b9b-4e9d-8b4a-1f06abc6186a",
+               "id": "107",
                "name": "Fortify Software Security Center (SSC)",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8086/ssc/#/"
             }, {
                "date_added": "13233276436000000",
-               "guid": "36cdd3bc-f532-4a59-b777-2a9491c8af32",
-               "id": "32",
+               "guid": "c3168545-e4f3-4615-bffc-dc9dd0a37007",
+               "id": "108",
                "name": "Git Repositories",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8091/gitweb/"
             }, {
                "date_added": "13233250090000000",
-               "guid": "1e4fe889-d95a-42c2-a511-11c5cc2c2153",
-               "id": "33",
+               "guid": "40fe3f3e-81ad-4291-9020-ce0edbb22b00",
+               "id": "109",
                "name": "Insurance Co. (Borland Demo Site)",
                "type": "url",
                "url": "http://demo.borland.com/InsuranceWebExtJS/"
             }, {
                "date_added": "13212088261000000",
-               "guid": "610a8e5b-2f3e-4082-bbbc-d66199393a1b",
-               "id": "34",
+               "guid": "727584ba-13c7-435b-8968-ba82c400bc97",
+               "id": "110",
                "name": "Jenkins CI",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8090/"
             }, {
                "date_added": "13195956302000000",
-               "guid": "2f02674f-2c84-4c07-b835-6062fc6f5006",
-               "id": "35",
+               "guid": "e3bad6a7-15d9-478f-8b00-ca94cd2de67a",
+               "id": "111",
                "name": "Jira",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8099/"
             }, {
                "children": [ {
                   "date_added": "13195956302000000",
-                  "guid": "2f93934a-b0c1-40e5-a0a3-3f814b895364",
-                  "id": "37",
+                  "guid": "af70eb92-9f2c-4558-adc0-71e8a3e57d97",
+                  "id": "113",
                   "name": "LRE Load Test",
                   "type": "url",
                   "url": "http://nimbusclient.aos.com/LoadTest"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "8436d6f4-2fe3-4fb4-9cad-f3dfbc04f9f7",
-                  "id": "38",
+                  "guid": "ced50f1b-22d7-4835-beef-6c66377771b9",
+                  "id": "114",
                   "name": "LRE Admin",
                   "type": "url",
                   "url": "http://nimbusclient.aos.com/admin"
                } ],
-               "date_added": "13276218888209802",
+               "date_added": "13278202462252485",
                "date_modified": "0",
-               "guid": "c4446d6a-8626-43f8-9c92-17f4264a4597",
-               "id": "36",
+               "guid": "0bdde958-5db3-4723-aac8-7c6c0140b92c",
+               "id": "112",
                "name": "Load Runner Enterprise (LRE)",
                "type": "folder"
             }, {
                "date_added": "13198093810000000",
-               "guid": "4282f22e-0f0c-4d3e-ac11-af14d79460a6",
-               "id": "39",
+               "guid": "9a73203f-b7c7-47a6-91c8-1187828d4a13",
+               "id": "115",
                "name": "MF Connect",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8081/ConnectWeb"
             }, {
                "date_added": "13238706033000000",
-               "guid": "eefbff44-47a3-48bc-b109-e458bbf40d6e",
-               "id": "40",
+               "guid": "dc854849-db55-4b63-87ff-0d07dfcd6958",
+               "id": "116",
                "name": "Network Virtualization (Nimbus Windows)",
                "type": "url",
                "url": "http://nimbuswindows.aos.com:8182/shunra/auth/login"
             }, {
                "date_added": "13228009010000000",
-               "guid": "9e5c16b4-a3a1-4237-beaa-5f27e925ca5a",
-               "id": "41",
+               "guid": "8c2ce7e6-3b0a-4e86-aef5-eda590334433",
+               "id": "117",
                "name": "PostgreSQL pgAdmin",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8098/"
             }, {
                "children": [ {
                   "date_added": "13195956302000000",
-                  "guid": "4554ca42-3268-4e20-8694-2b9c0bea1740",
-                  "id": "43",
+                  "guid": "7f68a7f8-96f8-4e3c-9431-6677d31e4b40",
+                  "id": "119",
                   "name": "PPM Launch Pages",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8088/"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "b220c892-4083-47f3-b515-839f818cf108",
-                  "id": "44",
+                  "guid": "e489c383-f064-4486-ab13-1eb822519f40",
+                  "id": "120",
                   "name": "Project and Portolio Management (PPM)",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8087/"
                }, {
                   "date_added": "13196298186000000",
-                  "guid": "b1270443-6f91-4f07-bfb8-68364fa39a1f",
-                  "id": "45",
+                  "guid": "738f4603-e611-4036-b9ef-e2ba24146f26",
+                  "id": "121",
                   "name": "PPM Mobile Web Client (Chrome only)",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8087/itg/mobile"
                }, {
                   "date_added": "13196298186000000",
-                  "guid": "cd5e0826-96f5-4421-8bce-4d69610f1481",
-                  "id": "46",
+                  "guid": "4f44d24d-73b8-4030-834c-bac7daa1a5d7",
+                  "id": "122",
                   "name": "PPM Agile Connector Usage Report",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8087/itg/web/knta/test/AgileConnectorsUsageReport.jsp"
                } ],
-               "date_added": "13276218888209887",
+               "date_added": "13278202462252572",
                "date_modified": "0",
-               "guid": "333f8fee-2c7b-4c16-bac8-fdf489c2f3aa",
-               "id": "42",
+               "guid": "ae96eb2e-737e-4e63-9ed5-f3933b95e58c",
+               "id": "118",
                "name": "Project and Portfolio Management (PPM)",
                "type": "folder"
             }, {
+               "date_added": "13278201782000000",
+               "guid": "faf5a1ef-8343-4511-95fe-b45ff85b9c54",
+               "id": "123",
+               "name": "PulseUno",
+               "type": "url",
+               "url": "http://nimbusserver.aos.com:8092/pulse/login.html"
+            }, {
                "children": [ {
                   "date_added": "13197587413000000",
-                  "guid": "3b263e22-8e5b-4044-b2e0-ffdf8e7b3f45",
-                  "id": "48",
+                  "guid": "4ecb3894-7735-410e-b4aa-dbb66df1a75d",
+                  "id": "125",
                   "name": "Release Control (RLC)",
                   "type": "url",
                   "url": "http://nimbuswindows/workcenter/tmtrack.dll?shell=swc#2"
                }, {
                   "date_added": "13224199474000000",
-                  "guid": "a1984f80-a6ee-4746-be21-90648ff2f751",
-                  "id": "49",
+                  "guid": "177c2da5-4c66-4f51-be77-72b88cf59db0",
+                  "id": "126",
                   "name": "Release Control Administration",
                   "type": "url",
                   "url": "http://nimbuswindows/workcenter/tmtrack.dll?shell=swc&StdPage&Template=rlc/admin"
                } ],
-               "date_added": "13276218888209934",
+               "date_added": "13278202462252666",
                "date_modified": "0",
-               "guid": "c9d20656-2eb5-4157-a477-7e388d129a32",
-               "id": "47",
+               "guid": "763e9ed6-928b-44cf-b396-b72f462ecb12",
+               "id": "124",
                "name": "Release Control (RLC)",
                "type": "folder"
             }, {
                "date_added": "13198103401000000",
-               "guid": "fdfad377-d119-43b9-9a8e-b121bcb95e61",
-               "id": "50",
+               "guid": "168325a5-abc1-4d20-95d2-cd9548220666",
+               "id": "127",
                "name": "SaaS Login",
                "type": "url",
                "url": "https://home.software.microfocus.com/myaccount/"
             }, {
                "children": [ {
                   "date_added": "13223078788000000",
-                  "guid": "cf82601b-db79-4d94-8ad4-1b03f663963b",
-                  "id": "52",
+                  "guid": "82e24e92-ac7f-43df-87a8-c39262a29015",
+                  "id": "129",
                   "name": "SAP Fiori Shopping Cart Demo",
                   "type": "url",
                   "url": "https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html"
                }, {
                   "date_added": "13223078726000000",
-                  "guid": "997d899b-7e81-4f14-8912-71ef0d9ebd33",
-                  "id": "53",
+                  "guid": "a1b4989a-53e1-4ca0-917b-06812a271958",
+                  "id": "130",
                   "name": "SAP Solution Manager Demo",
                   "type": "url",
                   "url": "https://www.sapsolutionmanagerdemo.com/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=001&sap-language=EN#Shell-home"
+               }, {
+                  "date_added": "13223078726000000",
+                  "guid": "39bbb617-ac45-49e0-b9b2-5e906e0daf30",
+                  "id": "131",
+                  "name": "SAP S/4HANA Fiori LaunchPad",
+                  "type": "url",
+                  "url": "https://sap-hana.mfdemoportal.com:44300/sap/bc/ui2/flp?sap-client=100&sap-language=EN#Shell-home"
+               }, {
+                  "date_added": "13223078726000000",
+                  "guid": "93eacab9-d4a9-4684-b454-b25e8d5d3de5",
+                  "id": "132",
+                  "name": "SAP SolMan ITSM",
+                  "type": "url",
+                  "url": "https://sap-sm.mfdemoportal.com:50001/sap(bD1lbiZjPTAwMSZkPW1pbg==)/bc/bsp/sap/crm_ui_start/default.htm"
+               }, {
+                  "date_added": "13223078726000000",
+                  "guid": "b4f586ec-4b05-44c1-8822-57708f04ed5d",
+                  "id": "133",
+                  "name": "SAP SolMan Solution Documentation (BPH)",
+                  "type": "url",
+                  "url": "https://sap-sm.mfdemoportal.com:50001/sap/bc/webdynpro/sap/smud_frame?sap-client=001&sap-language=EN#"
                } ],
-               "date_added": "13276218888210022",
+               "date_added": "13278202462252729",
                "date_modified": "0",
-               "guid": "20be49ad-728b-449b-9ad3-e8d65c8478da",
-               "id": "51",
-               "name": "SAP Public Demo Sites",
+               "guid": "1813caf0-1f4f-4b4a-8ab4-fa816ab8c6f4",
+               "id": "128",
+               "name": "SAP Demo Sites",
                "type": "folder"
             }, {
                "children": [ {
                   "date_added": "13195956302000000",
-                  "guid": "dddf2548-45ba-4fa0-82f2-230d4612ed17",
-                  "id": "55",
+                  "guid": "1490cd8f-46a1-4ab5-94de-50f378fa1a7b",
+                  "id": "135",
                   "name": "SV Lab Server",
                   "type": "url",
                   "url": "https://nimbusserver.aos.com:8445/api"
                }, {
                   "date_added": "13195956302000000",
-                  "guid": "afb32499-e885-4959-aad2-2d1c95112195",
-                  "id": "56",
+                  "guid": "09f64e7a-e2b6-4c50-b8a5-43540d583c38",
+                  "id": "136",
                   "name": "SV Management",
                   "type": "url",
                   "url": "https://nimbusserver.aos.com:6086/"
                } ],
-               "date_added": "13276218888210058",
+               "date_added": "13278202462252901",
                "date_modified": "0",
-               "guid": "789ff330-89b1-4857-ab1f-356f9f507396",
-               "id": "54",
+               "guid": "c1db2a45-fde4-4a43-97bf-463a066e398c",
+               "id": "134",
                "name": "Service Virtualization (SV)",
                "type": "folder"
             }, {
                "children": [ {
                   "date_added": "13196556271000000",
-                  "guid": "0b2b8787-ac4b-4580-8150-bb43ccd8ac7a",
-                  "id": "58",
+                  "guid": "7a191df6-d018-4c63-8e79-1bb2a4fefa16",
+                  "id": "138",
                   "name": "Silk Central",
                   "type": "url",
                   "url": "http://nimbuswindows.aos.com:19120/login"
                }, {
                   "date_added": "13196556253000000",
-                  "guid": "bc045e70-eda5-47ee-b018-50496f9e606d",
-                  "id": "59",
+                  "guid": "5accda67-4379-4bc1-85a4-ca3b04e5641b",
+                  "id": "139",
                   "name": "SC Instance Administration (Nimbus Windows Only)",
                   "type": "url",
                   "url": "http://localhost:19100/?lang=en"
                } ],
-               "date_added": "13276218888210094",
+               "date_added": "13278202462252943",
                "date_modified": "0",
-               "guid": "4bb86efc-fcc3-4762-87b4-732ec597bef7",
-               "id": "57",
+               "guid": "a55708f3-c954-4e46-9a44-4e12ae10ce4a",
+               "id": "137",
                "name": "Silk Central (SC)",
                "type": "folder"
             }, {
                "date_added": "13226777678000000",
-               "guid": "8dbf5793-7b73-4d7e-8a69-a8db07a73744",
-               "id": "60",
+               "guid": "095a7132-4d38-404b-a080-1d5efee51b00",
+               "id": "140",
                "name": "SiteScope",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8887/SiteScope/WebMain#!/consolidatedview"
             }, {
                "children": [ {
                   "date_added": "13196474626000000",
-                  "guid": "4eda04d1-d13d-4ed3-be28-c0c8b3bb2c0a",
-                  "id": "62",
+                  "guid": "056b7cd2-f087-4beb-bada-d60ad0337a82",
+                  "id": "142",
                   "name": "Application Repository",
                   "type": "url",
                   "url": "http://nimbuswindows:8085/mashupmgr"
                }, {
                   "date_added": "13196474555000000",
-                  "guid": "dcd60fc4-9068-4274-99a5-d0c1c0faf9ca",
-                  "id": "63",
+                  "guid": "c1d06732-42de-4656-b251-8e0dbfc33e1f",
+                  "id": "143",
                   "name": "SBM Work Center",
                   "type": "url",
                   "url": "http://nimbuswindows/workcenter"
                } ],
-               "date_added": "13276218888210132",
+               "date_added": "13278202462253011",
                "date_modified": "0",
-               "guid": "cad9ece7-4f2f-4197-b0dd-3ce855e02ae1",
-               "id": "61",
+               "guid": "bd5fb8c8-ce85-460a-b3ab-356a538267a1",
+               "id": "141",
                "name": "Solutions Business Manager (SBM)",
                "type": "folder"
             }, {
                "date_added": "13223078906000000",
-               "guid": "777ee7dd-d77d-4cb0-8c16-8686e047d77e",
-               "id": "64",
+               "guid": "1904f1ae-05c8-4c09-9f0a-9bf999acbb6d",
+               "id": "144",
                "name": "SonarQube",
                "type": "url",
                "url": "http://nimbusserver.aos.com:8020/about"
             }, {
                "children": [ {
                   "date_added": "13195956302000000",
-                  "guid": "b7da6615-372c-423d-ae35-91c1b1377432",
-                  "id": "66",
+                  "guid": "eef12d01-1c3f-4a5c-93dc-dadf0219141e",
+                  "id": "146",
                   "name": "UFT Mobile (Nimbus Server)",
                   "type": "url",
                   "url": "http://nimbusserver.aos.com:8084/integration/#/login"
                }, {
                   "date_added": "13223577400000000",
-                  "guid": "9959221b-f9bd-440e-a734-eb83ce2b69f3",
-                  "id": "67",
+                  "guid": "a64cc688-9965-443b-9bc5-5d5dfc7d53dc",
+                  "id": "147",
                   "name": "UFT Mobile (Cloud)",
                   "type": "url",
                   "url": "https://demo.mobilecenter.io/integration/#/login"
                }, {
                   "date_added": "13225995029000000",
-                  "guid": "db422c83-658e-4e92-93ee-5f93840eb4a4",
-                  "id": "68",
+                  "guid": "07922be9-b769-4415-9c27-51a1c6c2e03d",
+                  "id": "148",
                   "name": "UFT Mobile (Nimbus Client Only)",
                   "type": "url",
                   "url": "http://localhost:8080/integration/?#/lab"
                } ],
-               "date_added": "13276218888210163",
+               "date_added": "13278202462253073",
                "date_modified": "0",
-               "guid": "06f6c488-637f-449c-bfb9-9a9d05ef07aa",
-               "id": "65",
+               "guid": "7aebda52-f762-4f06-8db7-01e6e019bc95",
+               "id": "145",
                "name": "UFT Mobile",
                "type": "folder"
             } ],
-            "date_added": "13276218888209509",
+            "date_added": "13278202462251894",
             "date_modified": "0",
-            "guid": "6aaeb2c6-2f4e-4b11-a386-f5ba1b33ec45",
-            "id": "8",
+            "guid": "b10a4a3f-d31e-4bcf-95d0-3f758e4b3d48",
+            "id": "84",
             "name": "ADM Products",
             "type": "folder"
          }, {
             "date_added": "13195956303000000",
-            "guid": "e9efa835-5f42-4c24-93de-788b2d52bb8c",
-            "id": "69",
+            "guid": "f4fec538-a7a6-4167-b71e-01a79ef3bea0",
+            "id": "149",
             "name": "Docker Hub",
             "type": "url",
             "url": "https://hub.docker.com/u/admpresales"
          } ],
          "date_added": "13276218888010209",
-         "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000002",
+         "date_modified": "13278202488964218",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
          "type": "folder"
@@ -480,7 +508,7 @@
          "children": [  ],
          "date_added": "13276218888010210",
          "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000003",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
          "type": "folder"
@@ -489,7 +517,7 @@
          "children": [  ],
          "date_added": "13276218888010212",
          "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000004",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
          "id": "3",
          "name": "Mobile bookmarks",
          "type": "folder"
