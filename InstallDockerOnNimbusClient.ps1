@@ -54,9 +54,9 @@ if (Should-Run-Step "B")
 	
 	Write-Host "----------"	
 	Write-Host "Installing nimbusapp ..."
-    curl.exe -L https://raw.githubusercontent.com/msteffensen19/nimbusapp-w/main/nimbusapp.pl > ".\nimbusapp.pl"
+    curl.exe -L https://raw.githubusercontent.com/msteffensen19/InstallNimbusappEverywhere/main/nimbusapp_1.6.0_ms > ".\nimbusapp.pl"
     Get-Content .\nimbusapp.pl | Set-Content "C:\Program Files\Docker\nimbusapp.pl"
-    curl.exe -L https://raw.githubusercontent.com/msteffensen19/nimbusapp-w/main/nimbusapp.bat > ".\nimbusapp.bat"
+    curl.exe -L https://raw.githubusercontent.com/msteffensen19/InstallNimbusappEverywhere/main/Windows/InstallNimbusapp.bat > ".\nimbusapp.bat"
     Get-Content .\nimbusapp.bat | Set-Content "C:\Program Files\Docker\nimbusapp.bat"
     del .\nimbusapp.*
 	
