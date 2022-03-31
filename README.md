@@ -21,7 +21,7 @@ and it also starts the LRE Agent when a "nimbusapp lre stop" (or down) command i
 
 Other tasks include:
 * Installs docker-compose and docker-app
-* Installs nimbusapp 1.5.0-nc (modified for Windows and LRE)
+* Installs nimbusapp 1.6.0-ms (modified for Windows and LRE)
 * Installs InstallNimbusAliasesEverywhere - this installs common Nimbus aliases (dps, dpsa, di, de) on Windows CMD and PowerShell
 * Updates the Path env variable to include C:\Program Files\Docker
 * Installs Passwords.txt on the desktop for common container passwords
