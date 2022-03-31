@@ -54,10 +54,10 @@ if (Should-Run-Step "B")
 	
 	Write-Host "----------"	
 	Write-Host "Installing nimbusapp ..."
-    curl.exe -L https://raw.githubusercontent.com/msteffensen19/InstallNimbusappEverywhere/main/nimbusapp_1.6.0_ms > ".\nimbusapp_1.6.0_ms.pl"
+    curl.exe -L https://raw.githubusercontent.com/msteffensen19/InstallNimbusappEverywhere/main/nimbusapp_1.6.0_ms > "..\nimbusapp_1.6.0_ms.pl"
     curl.exe -L https://raw.githubusercontent.com/msteffensen19/InstallNimbusappEverywhere/main/Windows/InstallNimbusapp.bat > ".\InstallNimbusapp.bat"
     start-process .\InstallNimbusapp.bat
-    del .\nimbusapp.* InstallNimbusapp.bat
+    del ..\nimbusapp_1.6.0_ms.pl .\InstallNimbusapp.bat
 	
 	Write-Host "----------"	
 	Write-Host "Installing NimbusAliasesEverywhere ..."
