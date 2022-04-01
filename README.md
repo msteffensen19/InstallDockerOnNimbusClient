@@ -6,8 +6,8 @@ This is done to allow running LoadRunner Enterprise as a container
 on NimbusClient machines instead of on NimbusWindows VMs.
 
 To install this, just clone this repo into any folder and then 
-select the InstallDockerOnNimbusClient.ps1 file and right click
-the file and select Run with PowerShell. This will start a PowerShell
+select the InstallDockerOnNimbusClient.ps1 file from File Explorer and right 
+click the file and select Run with PowerShell. This will start a PowerShell
 command window which will first install a Docker repository and then
 install Docker on Windows. It will then ask to reboot the machine and
 continue installing other utilities. After everything installs, it
