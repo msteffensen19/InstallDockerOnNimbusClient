@@ -34,6 +34,6 @@ Other tasks include:
 * Installs an updated set of Chrome bookmarks for LRE to run on NimbusClient
 
 Dependencies:
+* https://github.com/msteffensen19/InstallNimbusappEverywhere
 * https://github.com/msteffensen19/InstallNimbusAliasesEverywhere
-* https://github.com/msteffensen19/InstallNimbusappEverwhere
 
