@@ -75,8 +75,8 @@ if (Should-Run-Step "B")
     [System.IO.File]::WriteAllBytes("$Home\Desktop\Admin PowerShell.lnk", $bytes)
 }
 Write-Host "----------"
-Write-Output "Showing results of 'nimbusapp version'"
-nimbusapp version
+Write-Output "Showing results of 'nimbusapp --version'"
+nimbusapp --version
 Write-Host "----------"
 
 Write-Host   "==========================================================================================="
