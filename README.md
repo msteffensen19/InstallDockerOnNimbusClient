@@ -27,7 +27,7 @@ script from there.
 
 Other tasks include:
 * Installs docker-compose and docker-app
-* Installs nimbusapp 1.6.1-ms (modified for Windows and LRE)
+* Installs nimbusapp 1.6.3-ms (modified for Windows and LRE)
 * Installs InstallNimbusAliasesEverywhere - this installs common Nimbus aliases (dps, dpsa, di, de) on Windows CMD and PowerShell
 * Updates the Path env variable to include C:\Program Files\Docker
 * Installs Passwords.txt on the desktop for common container passwords
