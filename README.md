@@ -1,6 +1,7 @@
 # InstallDockerOnNimbusClient
 Install Docker on NimbusClient machines running Windows Server Standard 2019.
-This script will also run the InstallNimbusAliasesEberywhere repo.
+
+This script will also run the InstallNimbusAliasesEverywhere repo.
 
 This PowerShell script will install Docker on a NimbusClient VM.
 This is done to allow running LoadRunner Enterprise as a container
