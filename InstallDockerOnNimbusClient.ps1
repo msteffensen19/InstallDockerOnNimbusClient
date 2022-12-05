@@ -44,9 +44,9 @@ if (Should-Run-Step "B")
     del   C:\Users\demo\InstallDockerOnNimbusClient\Bookmarks
     
     	Write-Host "----------"
-	Write-Host "Copying SAP Connection file to C:\Tools ..."
-    xcopy /y C:\Users\demo\InstallDockerOnNimbusClient\SAP-VPN.vpn "C:\Tools\"
-    del   C:\Users\demo\InstallDockerOnNimbusClient\SAP-VPN.vpn
+	Write-Host "Copying Soft Ether SAP VPN Import file to C:\Tools ..."
+    xcopy /y C:\Users\demo\InstallDockerOnNimbusClient\SAP-VPN-Import.vpn "C:\Tools\"
+    del   C:\Users\demo\InstallDockerOnNimbusClient\SAP-VPN-Import.vpn
 	
 	Write-Host "----------"
 	Write-Host "Installing docker-compose and docker-app ..."
