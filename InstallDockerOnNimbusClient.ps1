@@ -55,9 +55,7 @@ if (Should-Run-Step "B")
 	Write-Host "Installing docker-compose and docker-app ..."
 	cd C:\
  	New-Item -ItemType Directory -Path $Env:ProgramFiles\Docker
-    # curl.exe -L https://github.com/docker/compose/releases/download/1.29.1/docker-compose-Windows-x86_64.exe -o "C:\Program Files\Docker\docker-compose.exe"
-    # Can also use Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
-    
+    # Old form - curl.exe -L https://github.com/docker/compose/releases/download/1.29.1/docker-compose-Windows-x86_64.exe -o "C:\Program Files\Docker\docker-compose.exe"
     Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
     # Doesn't appear to work with newer docker-app v0.8.0
     Start-BitsTransfer -Source "https://github.com/docker/app/releases/download/v0.6.0/docker-app-windows.tar.gz" -Destination $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
@@ -88,7 +86,6 @@ if (Should-Run-Step "B")
     [System.IO.File]::WriteAllBytes("$Home\Desktop\Admin PowerShell.lnk", $bytes)
 }
 Write-Host "----------"
-Write-Output "Showing results of 'nimbusapp --version'"
 nimbusapp --version
 Write-Host "----------"
 
