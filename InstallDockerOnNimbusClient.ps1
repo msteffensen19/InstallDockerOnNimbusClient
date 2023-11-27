@@ -35,8 +35,11 @@ if (Should-Run-Step "B")
 	
 	Write-Host "----------"
 	Write-Host "Installing Docker - this can take a couple of minutes ..."
-    Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 20.10.6
-    Start-Service Docker
+    # Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 20.10.6
+    # Start-Service Docker
+    # Enable-WindowsOptionalFeature -Online -FeatureName Containers
+    Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -o install-docker-ce.ps1
+    .\install-docker-ce.ps1
     
         Write-Host "----------"
 	Write-Host "Updating LRE Chrome bookmarks ..."
