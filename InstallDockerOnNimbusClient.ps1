@@ -86,6 +86,7 @@ if (Should-Run-Step "B")
     [System.IO.File]::WriteAllBytes("$Home\Desktop\Admin PowerShell.lnk", $bytes)
 }
 Write-Host "----------"
+Write-Host "Starting nimbusapp DNS configuration ..."
 nimbusapp --version
 Write-Host "----------"
 
