@@ -54,15 +54,16 @@ if (Should-Run-Step "B")
 	Write-Host "----------"
 	Write-Host "Installing docker-compose and docker-app ..."
 	cd C:\
+ 	New-Item -ItemType Directory -Path $Env:ProgramFiles\Docker
     # curl.exe -L https://github.com/docker/compose/releases/download/1.29.1/docker-compose-Windows-x86_64.exe -o "C:\Program Files\Docker\docker-compose.exe"
     # Can also use Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
     
     Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
     # Doesn't appear to work with newer docker-app v0.8.0
     Start-BitsTransfer -Source "https://github.com/docker/app/releases/download/v0.6.0/docker-app-windows.tar.gz" -Destination $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
-    tar xvzf .\docker-app-windows.tar.gz
-    Move-Item -Path ".\docker-app-windows.exe" -Destination $Env:ProgramFiles\Docker\docker-app.exe
-    del .\docker-app-windows.tar.gz
+    tar xvzf $Env:ProgramFiles\Docker\docker-app-windows.tar.gz -C $Env:ProgramFiles\Docker
+    Move-Item -Path $Env:ProgramFiles\Docker\docker-app-windows.exe" -Destination $Env:ProgramFiles\Docker\docker-app.exe
+    del $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
 	
 	Write-Host "----------"	
 	Write-Host "Installing nimbusapp ..."
