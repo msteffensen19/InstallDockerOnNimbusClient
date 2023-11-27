@@ -62,7 +62,7 @@ if (Should-Run-Step "B")
     # Doesn't appear to work with newer docker-app v0.8.0
     Start-BitsTransfer -Source "https://github.com/docker/app/releases/download/v0.6.0/docker-app-windows.tar.gz" -Destination $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
     tar xvzf $Env:ProgramFiles\Docker\docker-app-windows.tar.gz -C $Env:ProgramFiles\Docker
-    Move-Item -Path $Env:ProgramFiles\Docker\docker-app-windows.exe" -Destination $Env:ProgramFiles\Docker\docker-app.exe
+    Move-Item -Path $Env:ProgramFiles\Docker\docker-app-windows.exe -Destination $Env:ProgramFiles\Docker\docker-app.exe
     del $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
 	
 	Write-Host "----------"	
