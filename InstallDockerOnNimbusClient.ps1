@@ -1,4 +1,7 @@
 param($Step="A")
+$DockerCLIVersion = "24.0.7"
+$DockerComposeVersion = "v2.23.3"
+$DockerAppVersion = "v0.6.0"
 # -------------------------------------
 # Imports
 # -------------------------------------
@@ -35,11 +38,9 @@ if (Should-Run-Step "B")
 	
 	Write-Host "----------"
 	Write-Host "Installing Docker - this can take a couple of minutes ..."
-    # Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 20.10.6
     # Start-Service Docker
-    # Enable-WindowsOptionalFeature -Online -FeatureName Containers
     Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -o install-docker-ce.ps1
-    .\install-docker-ce.ps1 -DockerVersion 24.0.7
+    .\install-docker-ce.ps1 -DockerVersion $DockerCLIVersion
     
         Write-Host "----------"
 	Write-Host "Updating LRE Chrome bookmarks ..."
@@ -55,10 +56,9 @@ if (Should-Run-Step "B")
 	Write-Host "Installing docker-compose and docker-app ..."
 	cd C:\
  	New-Item -ItemType Directory -Path $Env:ProgramFiles\Docker
-    # Old form - curl.exe -L https://github.com/docker/compose/releases/download/1.29.1/docker-compose-Windows-x86_64.exe -o "C:\Program Files\Docker\docker-compose.exe"
-    Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
+    Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/$DockerComposeVersion/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
     # Doesn't appear to work with newer docker-app v0.8.0
-    Start-BitsTransfer -Source "https://github.com/docker/app/releases/download/v0.6.0/docker-app-windows.tar.gz" -Destination $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
+    Start-BitsTransfer -Source "https://github.com/docker/app/releases/download/$DockerAppVersion/docker-app-windows.tar.gz" -Destination $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
     tar xvzf $Env:ProgramFiles\Docker\docker-app-windows.tar.gz -C $Env:ProgramFiles\Docker
     Move-Item -Path $Env:ProgramFiles\Docker\docker-app-windows.exe -Destination $Env:ProgramFiles\Docker\docker-app.exe
     del $Env:ProgramFiles\Docker\docker-app-windows.tar.gz
