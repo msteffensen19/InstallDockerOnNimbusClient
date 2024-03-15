@@ -27,7 +27,7 @@ You can also install this nimbusapp on Linux - just git clone that repository
 to your Linux environment, change into the Linux subdirectory and run the installation
 script from there.
 
-  git clone https://github.com/msteffensen19/InstallDockerOnNimbusClient.git
+    git clone https://github.com/msteffensen19/InstallDockerOnNimbusClient.git
 
 Other tasks include:
 * Installs docker-compose and docker-app
