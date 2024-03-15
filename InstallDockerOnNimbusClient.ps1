@@ -1,6 +1,6 @@
 param($Step="A")
-$DockerCLIVersion = "24.0.7"
-$DockerComposeVersion = "v2.23.3"
+$DockerCLIVersion = "24.0.9"
+$DockerComposeVersion = "v2.24.7"
 $DockerAppVersion = "v0.6.0"
 # -------------------------------------
 # Imports
